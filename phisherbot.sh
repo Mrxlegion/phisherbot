@@ -1,12 +1,13 @@
 #!/bin/bash
 
-##   Phisherbot 	: 	Automated Phishing Tool
-##   Author 	        : 	Legion_Mrx
-##   Version 	        : 	1.1
+##   PHISHERBOT  	: 	Automated Phishing Tool
+##   Author 	        :       legion Mrx [ Manish ] 
+##   Version 	        :       1.1
 
+## If you Copy Then Give the credits  : )
 
 ## ANSI colors (FG & BG)
-RED="$(printf '\033[31m')"  GREEN="$(printf '\033[32m')" ORANGE="$(printf '\033[33m')"  BLUE="$(printf '\033[34m')"
+RED="$(printf '\033[31m')"  GREEN="$(printf '\033[32m')"  ORANGE="$(printf '\033[33m')"  BLUE="$(printf '\033[34m')"
 MAGENTA="$(printf '\033[35m')"  CYAN="$(printf '\033[36m')"  WHITE="$(printf '\033[37m')" BLACK="$(printf '\033[30m')"
 REDBG="$(printf '\033[41m')"  GREENBG="$(printf '\033[42m')"  ORANGEBG="$(printf '\033[43m')"  BLUEBG="$(printf '\033[44m')"
 MAGENTABG="$(printf '\033[45m')"  CYANBG="$(printf '\033[46m')"  WHITEBG="$(printf '\033[47m')" BLACKBG="$(printf '\033[40m')"
@@ -63,26 +64,30 @@ kill_pid() {
 ## Banner
 banner() {
 	cat <<- EOF
-	   
-┏━━━┳┓╋╋╋╋╋┏┓╋╋╋╋╋╋┏┓╋╋╋╋┏┓
-┃┏━┓┃┃╋╋╋╋╋┃┃╋╋╋╋╋╋┃┃╋╋╋┏┛┗┓
-┃┗━┛┃┗━┳┳━━┫┗━┳━━┳━┫┗━┳━┻┓┏┛
-┃┏━━┫┏┓┣┫━━┫┏┓┃┃━┫┏┫┏┓┃┏┓┃┃
-┃┃╋╋┃┃┃┃┣━━┃┃┃┃┃━┫┃┃┗┛┃┗┛┃┗┓
-┗┛╋╋┗┛┗┻┻━━┻┛┗┻━━┻┛┗━━┻━━┻━┛
-           
-               ${GREEN}Version:1.1
-		${GREEN}[${WHITE}-${GREEN}]${CYAN} Tool Created by Legion_Mrx (MANISH)${WHITE}
+		
+                ${ORANGE}┏━━━┳┓╋╋╋╋╋┏┓╋╋╋╋╋╋┏┓╋╋╋╋┏┓
+                         ┃┏━┓┃┃╋╋╋╋╋┃┃╋╋╋╋╋╋┃┃╋╋╋┏┛┗┓
+                         ┃┗━┛┃┗━┳┳━━┫┗━┳━━┳━┫┗━┳━┻┓┏┛
+                         ┃┏━━┫┏┓┣┫━━┫┏┓┃┃━┫┏┫┏┓┃┏┓┃┃
+                         ┃┃╋╋┃┃┃┃┣━━┃┃┃┃┃━┫┃┃┗┛┃┗┛┃┗┓
+                         ┗┛╋╋┗┛┗┻┻━━┻┛┗┻━━┻┛┗━━┻━━┻━┛
+		                                    ${RED}Version :1.1
+
+		${GREEN}[${WHITE}-${GREEN}]${CYAN} Tool Created by Manish (legion Mrx)${WHITE}
 	EOF
 }
 
 ## Small Banner
 banner_small() {
 	cat <<- EOF
-		${BLUE}
-		${BLUE}  â–‘â–€â–€â–ˆâ–‘â–ˆâ–€â–ˆâ–‘â–ˆâ–‘â–ˆâ–‘â–€â–ˆâ–€â–‘â–ˆâ–€â–€â–‘â–ˆâ–‘â–ˆâ–‘â–ˆâ–€â–€â–‘â–ˆâ–€â–„
-		${BLUE}  â–‘â–„â–€â–‘â–‘â–ˆâ–€â–€â–‘â–ˆâ–€â–ˆâ–‘â–‘â–ˆâ–‘â–‘â–€â–€â–ˆâ–‘â–ˆâ–€â–ˆâ–‘â–ˆâ–€â–€â–‘â–ˆâ–€â–„
-		${BLUE}  â–‘â–€â–€â–€â–‘â–€â–‘â–‘â–‘â–€â–‘â–€â–‘â–€â–€â–€â–‘â–€â–€â–€â–‘â–€â–‘â–€â–‘â–€â–€â–€â–‘â–€â–‘â–€${WHITE} 2.2
+		
+                ${BLUE}┏━━━┳┓╋╋╋╋╋┏┓╋╋╋╋╋╋┏┓╋╋╋╋┏┓
+                       ┃┏━┓┃┃╋╋╋╋╋┃┃╋╋╋╋╋╋┃┃╋╋╋┏┛┗┓
+                       ┃┗━┛┃┗━┳┳━━┫┗━┳━━┳━┫┗━┳━┻┓┏┛
+                       ┃┏━━┫┏┓┣┫━━┫┏┓┃┃━┫┏┫┏┓┃┏┓┃┃
+                       ┃┃╋╋┃┃┃┃┣━━┃┃┃┃┃━┫┃┃┗┛┃┗┛┃┗┓
+                       ┗┛╋╋┗┛┗┻┻━━┻┛┗┻━━┻┛┗━━┻━━┻━┛
+		                                  ${BLUE}Version :1.1
 	EOF
 }
 
@@ -213,14 +218,14 @@ msg_exit() {
 about() {
 	{ clear; banner; echo; }
 	cat <<- EOF
-		${GREEN}Author   ${RED}:  ${ORANGE} Legion_Mrx (Manish)${RED}[ ${ORANGE} Manish ${RED}]
-		
+		${GREEN}Author   ${RED}:  ${ORANGE}Legion Mrx${RED}[ ${ORANGE}Manish ${RED}]
 		${GREEN}Version  ${RED}:  ${ORANGE}2.2
 
-		${REDBG}${WHITE} Thanks :) FROM legion_mrx ${RESETBG}
+		${REDBG}${WHITE} Thanks : Legion Mrx${RESETBG}
 
 		${RED}Warning:${WHITE}
-		
+		${CYAN}This Tool is made for educational purpose only ${RED}!${WHITE}
+		${CYAN}Author will not be responsible for any misuse of this toolkit ${RED}!${WHITE}
 
 		${RED}[${WHITE}00${RED}]${ORANGE} Main Menu     ${RED}[${WHITE}99${RED}]${ORANGE} Exit
 
